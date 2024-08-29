@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'segoe';
+    src: url('fonte/Segoe\ UI.ttf');
+}
+
+.cadastro{
+    
+    margin-left: 3%;
+    background-color: #d8b9f7;
+    border-radius: 20px;
+    box-shadow: 3px solid #6b1bc6;
+    padding: 20px;
+    font-family: 'segoe';   
+}
+
+hr{
+    color: lightgray;
+    
+}
+input{
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 10px;
+    width: 40%;
+    font-family: 'segoe';   
+    
+}
+.email > img{
+    width: 30px;
+}
+#recuperacao{
+    color: #6b1bc6;
+}
+p > a {
+    text-decoration: none;
+}
+button{
+    background-color:#6b1bc6;
+    color: white;
+    width: 16%;
+    height: 30px;
+    border: none;
+    border-radius: 15px;
+
+}

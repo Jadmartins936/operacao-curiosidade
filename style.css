@@ -2,35 +2,61 @@
     font-family: 'segoe';
     src: url('fonte/Segoe\ UI.ttf');
 }
-
-.cadastro{
+body{
+    background-color: #ffffff;
+    margin: 6%;
+    overflow-x: hidden;
     
-    margin-left: 3%;
-    background-color: #d8b9f7;
+}
+.cadastro{
+
+    box-shadow: 1px 4px 4px 4px rgba(0, 0, 0, 0.068);
+    margin: 3%;
+    background-color: #ffffff;
     border-radius: 20px;
-    box-shadow: 3px solid #6b1bc6;
     padding: 20px;
-    font-family: 'segoe';   
+    font-family: 'segoe'; 
+    width: 40%; 
+    height: 80%;  
+    display: flex;
+    justify-content: center;
+    display: inline-block;
+}
+.carrossel{
+    margin: 3%;
+    display: inline-block;
+    float: right;
+
+}
+img{
+    
+    width: 30%;
+    
 }
 
 hr{
-    color: lightgray;
-    
+    color: rgb(211, 211, 211);
+    width: 180px;
+   
 }
 input{
-    border: 1px solid white;
+    border: 1px solid lightgray;
     background-color: transparent;
     border-radius: 10px;
     padding: 10px;
-    width: 40%;
-    font-family: 'segoe';   
-    
+    width: 60%;
+    font-family: 'segoe'; 
 }
-.email > img{
-    width: 30px;
+#useremail{
+    background-image: url("icons/mail.svg");
+    background-repeat: no-repeat;
+    background-position: right;
 }
-#recuperacao{
-    color: #6b1bc6;
+#usersenha{
+   
+    background-image: url("icons/eye-open.svg");
+    background-repeat: no-repeat;
+    background-position: right;
 }
 p > a {
     text-decoration: none;
@@ -38,9 +64,9 @@ p > a {
 button{
     background-color:#6b1bc6;
     color: white;
-    width: 16%;
+    width: 60%;
     height: 30px;
     border: none;
-    border-radius: 15px;
+    border-radius: 10px;
 
 }

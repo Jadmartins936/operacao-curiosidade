@@ -5,17 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Operação curiosidade</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+   <!--Estilo CSS-->
+    <link rel="stylesheet" href="estilo/">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
 </head>
 <body>
+<div class="carrossel">
+    
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="cebola/big_onion_facts_and_data.svg" alt="" width="300"></div>
+      <div class="swiper-slide"><img src="cebola/big_onion_interests.svg" alt="" width="30"></div>
+      <div class="swiper-slide"><img src="cebola/big_onion_feelings.svg" alt="" width="30"></div>
+      <div class="swiper-slide"><img src="cebola/big_onion_values.svg" alt="" width="30"></div>
+    
+    </div>
+    
+    <blockquote>
+        <p>"A primeira camada da cebola é sobre conhecer o colaborador além do cargo, revelando suas necessidades e objetivos pessoais"</p>
+      </blockquote>
+      <br>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+    </div>
+    
+    <div class="powerby">
+    <p class="logo">Powered by</p>
+    <img src="icons/login/FORLOGIC_LOGO+SIMBOLO_PRETO1.svg" alt="" width="200px">
+    </div>
+</div>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+
     <header>
 
     </header>
-    <div class="cadastro"> 
+ 
     <main>
-        <form action="cadastro.php" method="post">
-            <img src="imagens/logoescrita.svg" alt="">
-            <p>Bem vindo de volta! Faça login para continar.</p>
+        <div class="cadastro">
+        <form action="cadastro.php" method="post" >
+            
+            <img id="operacao" src="imagens/logoescrita.svg" alt="">
+            <p>Bem vindo de volta! Faça login para continuar.</p>
             <hr>
                 <label for="useremail"><p>Email ou nome de usuário</p></label>
                 
@@ -24,16 +65,29 @@
                 <label for="usersenha"><p>Senha</p></label>
                   
                     <input type="password" name="senha" id="usersenha" placeholder="Digite sua senha">
-                    <p id="recuperacao">Esqueceu sua senha? <a href="">Clique aqui</a></p>
+                    <p id="recuperacao">Esqueceu sua senha? <a href=""> Clique aqui </a> </p>
                
                 <button type="submit">Enviar</button>
-            </form>
-    </main>             
-    </div>
-    <div class="carrossel">
-    <img src="imagens/pexels-veeterzy-114979.jpg" alt="" >    
-    </div>
- 
+                 </div>
+            </main>             
+        </form>
+
+       
+
     <footer></footer>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          cssMode: true,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+          mousewheel: true,
+          keyboard: true,
+        });
+      </script>
 </body>
 </html>

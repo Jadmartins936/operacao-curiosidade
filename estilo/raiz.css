@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'segoe';
+    src: url('../fonte/Segoe\ UI.ttf');
+}
+
+:root{
+    --primary-color: #ffffff;
+    --secondary-color: #6b1bc6;
+    --fonte-titulo: 'segoe';
+    
+}
+body {
+    background-color: var(--primary-color);
+    font-family: var(--fonte-titulo);
+}

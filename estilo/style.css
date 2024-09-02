@@ -1,0 +1,167 @@
+@font-face {
+    font-family: 'segoe';
+    src: url('fonte/Segoe\ UI.ttf');
+}
+
+body{
+    background-color: #ffffff;
+    margin: 6%;
+    overflow-x: hidden;
+    font-family: 'segoe';
+}
+main{
+    box-shadow: 6px 6px 6px 6px #00000028;
+    margin: 3%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    font-family: 'segoe'; 
+    width: 30%; 
+    display: inline-block; 
+    position: absolute;
+   
+}
+body > p{
+    display: inline-block;
+    font-size: 1.6em;
+    margin: 10px;
+}
+.carrossel > .powerby{
+    margin: auto;
+    height: 60px;
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    
+   
+}
+.powerby > p{
+    display: inline-block;
+    margin: 10px;
+    padding-top: 10px;
+    vertical-align:top;
+
+}
+.powerby > img{
+    height: 100%;
+}
+#operacao{
+    margin-left: 24%;
+}
+
+form > img{
+    width: 20vw;
+    height: 6vh;
+    margin: 10px;
+}
+main > p , label{
+    font-size: 3vh;
+}
+
+form > p{
+    display: flex;
+    justify-content: center;
+    font-size: 1.2em;
+}
+hr{
+    color: rgb(211, 211, 211);
+    width: 180px;
+   
+}
+
+input{
+    border: 1px solid lightgray;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 3%;
+    width: 92%;
+    font-family: 'segoe'; 
+
+}
+
+#useremail{
+    background-image: url("icons/login/mail.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 24px;
+    background-position-x: 1em;
+}
+#usersenha{
+   
+    background-image: url("icons/login/lock.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 24px;
+    background-position-x: 1em;
+}
+::placeholder{
+padding-left: 5%;
+font-size: 1vw;
+vertical-align: middle;
+
+}
+
+#recuperacao{
+   display: flex;
+   justify-content: right;
+   margin: 3%;
+   color: #6b1bc6;
+   font-size: 1.2em;
+    
+}
+button{
+    background-color:#6b1bc6;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 10vw;
+    height: 6vh;
+    font-size: 1.2em;
+    position: relative;
+    left: 30%;
+    margin: 10px;
+}
+blockquote{
+   font-family: 'segoe';
+   font-size: 1.6em;
+   font-style: italic;
+   letter-spacing: 1px;
+}
+.destaque{
+    color: #6b1bc6;
+    display: inline-block;
+    
+    
+}
+
+.swiper {
+    width: 50%;
+    height: 50%;
+  
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .swiper-slide img {
+   
+    width: 20vw;
+    margin: 30px;
+    object-fit: cover;
+  }
+  .carrossel{
+    position: relative;
+    width: 70%;
+    float: inline-end;
+    margin-top: 1%;
+    
+   
+  }

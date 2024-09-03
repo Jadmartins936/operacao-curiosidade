@@ -6,8 +6,7 @@
     <link rel="stylesheet" href="estilo/perfil.css">
     <link rel="stylesheet" href="estilo/raiz.css">
     <title>Editar perfil</title>
-    <!--cor secundária
-    #eadaf7-->
+   
 </head>
 <body>
     <header class="menu_esquerdo">
@@ -25,9 +24,47 @@
         <hr>
         <li><img src="icons/perfil/configura.svg" alt=""><a href="">Configurações</a></li>
        </ul>
+       <div class="rodape_menu"></div>
     </header>
     <main>
-        <input type="search" name="pesquisa" placeholder="Faça sua pesquisa aqui">
+        <input type="search" name="pesquisa" placeholder="Faça sua pesquisa aqui"><br>
+        <button><img src="icons/perfil/" alt=""><p>Meu perfil</p></button>
+        <button><p>Opções de compartilhamento</p></button>
+        <button><p>Gerenciar usuários</p></button>
+        <button><p>Trilha de auditoria</p></button>
+
+        <!--Formulário-->
+        <form action="dados_de_usuario" method="post">
+        <h1>Seus dados</h1>
+        <label for="nome"><p>Nome</p></label>
+        <input type="text" name="nome" id="nome">
+        <label for="idade"><p>Idade</p></label>
+        <input type="number" name="idade" id="idade">
+        <label for="email"><p>Email</p></label>
+        <input type="email" name="email" id="email">
+        <label for="user"><p>Nome de usuário</p></label>
+        <input type="text" name="user" id="user">
+        <label for="nascimento"><p>Data de nascimento</p></label>
+        <input type="date" name="nascimento" id="nascimento"> <br><br>
+
+        <label for="est_civil">Estado civil</label> <br><br>
+        <select name="est_civil" id="est_civil">
+            <option value="casado">Casado(a)</option>
+            <option value="solteiro">Solteiro(a)</option>
+            <option value="união estável">União estável</option>
+            <option value="divorciado">Divorciado(a)</option>
+            <option value="viuvo">Viúvo(a)</option>
+        </select>
+
+        <label for="endereco"><p>Endereço</p></label>
+        <input type="text" name="endereco" id="endereco">
+
+        <label for="ocupacao"><p>Ocupação</p></label>
+        <input type="text" name="ocupacao" id="ocupacao">
+
+
+
+        </form>
     </main>
     <footer></footer>
 </body>

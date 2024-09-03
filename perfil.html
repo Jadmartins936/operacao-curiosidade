@@ -27,11 +27,15 @@
        <div class="rodape_menu"></div>
     </header>
     <main>
-        <input type="search" name="pesquisa" placeholder="Faça sua pesquisa aqui"><br>
-        <button><img src="icons/perfil/" alt=""><p>Meu perfil</p></button>
-        <button><p>Opções de compartilhamento</p></button>
-        <button><p>Gerenciar usuários</p></button>
-        <button><p>Trilha de auditoria</p></button>
+        <input type="search" name="pesquisa" placeholder="Faça sua pesquisa aqui">
+        <div class="personalizacao">
+            <button><img src="icons/perfil/contrast_24dp_6B1BC6_FILL0_wght400_GRAD0_opsz24.svg" alt=""></button>
+            <button><img src="icons/perfil/notifications_24dp_6B1BC6_FILL0_wght400_GRAD0_opsz24.svg" alt=""></button>
+        </div><br>
+        <button><img src="icons/perfil/account_circle_24dp_6B1BC6_FILL0_wght400_GRAD0_opsz24.svg" alt=""><p>Meu perfil</p></button>
+        <button><img src="icons/perfil/ios_share_24dp_6B1BC6_FILL0_wght400_GRAD0_opsz24.svg" alt=""><p>Opções de compartilhamento</p></button>
+        <button><img src="icons/perfil/manage_accounts_24dp_6B1BC6_FILL0_wght400_GRAD0_opsz24.svg" alt=""><p>Gerenciar usuários</p></button>
+        <button><img src="icons/perfil/trilha.svg" alt=""><p>Trilha de auditoria</p></button>
 
         <!--Formulário-->
         <form action="dados_de_usuario" method="post">
@@ -61,11 +65,48 @@
 
         <label for="ocupacao"><p>Ocupação</p></label>
         <input type="text" name="ocupacao" id="ocupacao">
-
-
+<br>
+        <div class="acoes">
+        
+        <button type="submit" value="Salvar">Salvar</button>
+        <button type="reset" value="Limpar">Limpar</button>
+        </div>
 
         </form>
     </main>
+    <div class="user">
+    <div class="conta">
+    <img src="imagens/users/pexels-fernandocortes-16654079.jpg" alt=""> 
+    <h3>Nome de usuário</h3>
+    <button><img src="icons/perfil/expand_circle_down_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt=""></button>
+    <p>[Administrador]</p>
+    </div>
+
+    
+    <div class="edicao">
+    <h2>Sua conta</h2>
+    <div class="moldura"><img src="icons/perfil/conta.svg" alt=""></div>
+   
+    <div class="borda"><img src="" alt=""> <p>Atualize sua imagem</p></div>
+    <div class="borda"><img src="" alt=""> <p>Remover imagem</p></div><br>
+    
+    </div>
+   
+        <form action="altera_senha.php" method="post" class="dados">
+            <label for="senha_atual">Senha atual</label>
+            <input type="password" name="senha_atual" id="senha_atual">
+            <label for="senha_nova">Nova senha</label>
+            <input type="password" name="senha_nova" id="senha_nova">
+            <label for="adm"></label>
+            <input type="checkbox" id="adm" name="adm" value="funcao">
+            <label for="adm">Administrador</label><br>
+            <div class="acoes">
+            <button type="submit" value="Salvar">Salvar</button>
+            </div>
+        </form>
+        
+    </div>
+   
     <footer></footer>
 </body>
 </html>

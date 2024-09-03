@@ -54,10 +54,9 @@ main{
     margin-left: 20%;
     padding: 30px;
     width: 50%;
-    background-color: #eadaf7;
-    
-    
+    background-color: #eadaf7; 
 }
+
 input{
     border: 1px solid lightgray;
     width: 80%;
@@ -66,18 +65,54 @@ input{
     font-size: 1.2em;
     font-family: 'segoe';
 }
+.personalizacao{
+    display: inline-block;
+
+}
+.personalizacao > button{
+    border: none;
+    margin: 10px;
+    padding: 20px;
+}
 form > input{
-    width: 80%;
-    
+    width: 80%; 
+}
+.acoes{
+  
+  
+    display:inline-block;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.acoes > button{
+   padding: 20px;
+   width: 30%;
+   border-radius: 10px;
+   margin: 20px;
+   border: none;
+   background-color: #6b1bc6;
+   color: #FFFFFF;
+   font-size: 1.2em;
+   font-weight: bold;
+   
 }
 main > button{
     border-radius: 20px;
     border: none;
     background-color:  #eadaf7;
-    padding: 10px;
+    margin: 20px;
     font-family: 'segoe';
     font-size: 1em;
 }
+button > img{
+    vertical-align: middle;
+}
+button > p{
+    display: inline-block;
+    margin: 10px;
+}
+
 .rodape_menu{
     background-color: #6b1bc6;
     width: 20%;
@@ -86,4 +121,72 @@ main > button{
     position: absolute;
     bottom: 0px;    
    
+}
+.user{
+    background-color:#d5a1ff;
+    height: 100vh;
+    float: right;
+    width: 27vw; 
+}
+.conta{
+    margin: 30px;
+    background-color: #6b1bc6;
+    border-radius: 10px;
+    height: 10vh;
+    color: #FFFFFF;
+}
+.conta > img{
+    width: 10%;
+    height: 65%;
+    border-radius: 20px;
+    float: left;
+    margin: 10px;
+    padding: 10px;
+}
+.conta > h3{
+    font-weight: lighter;
+    vertical-align: middle;
+    display: inline-block;
+}
+.conta > p{
+    margin: auto;
+}
+button{
+    background-color: transparent;
+    border: 0px;
+    
+}
+.moldura{
+    width: 120px;
+    height: 120px;
+    background-color:#e4c6ff;
+    position: relative;
+    margin: 30px;
+    border-radius: 10px;
+    border: 1px solid #6b1bc6;
+    float: left;
+}
+.moldura > img{
+  left: 50%;
+  margin-left: -10px; /* A metade de sua largura. */
+  margin-top: 45px;
+  position: absolute;
+}
+.edicao{
+   background-color: aqua;
+   height: 19vh;
+   margin: 30px;
+}
+.borda{
+    background-color: yellow;
+    width: 300px;
+    display: flex;
+    justify-content:center
+}
+.dados{
+   position: absolute;
+   margin: 20px;
+}
+.dados > input{
+    height: 16px;
 }

@@ -12,6 +12,15 @@ header{
     float: left;
 }
 
+#filtros{
+ 
+        padding: 18px;
+        border-radius: 18px;
+        font-family: 'segoe';
+        background-color:#e4c6ff;
+        float: left;
+        
+    }
 
 .logo{
     background-color: #6b1bc6;
@@ -62,62 +71,6 @@ main{
     
 }
 
-main > input{
-    border: 2px solid lightgray;
-    width: 80%;
-    padding: 20px;
-    border-radius: 22px;
-    font-size: 1.2em;
-    font-family: 'segoe';
-}
-.personalizacao{
-    display: inline-block;
-
-}
-.personalizacao > button{
-    border: none;
-    margin: 0px;
-    padding: 20px;
-}
-main > form{
-justify-content: center;
-}
-form > input{
-    border: 2px solid lightgray;
-    width: 80%;
-    padding: 18px;
-    border-radius: 18px;
-    font-family: 'segoe';
-    background-color: transparent;
-    
-}
-.acoes{
-    display:inline-block;
-    margin-left: 0%;
-    margin-top: 30px;
-}
-.acoes > button{
-   padding: 20px;
-   width: 210px;
-   margin-right: 20px;
-   border-radius: 10px;
-   border: none;
-   background-color: #6b1bc6;
-   color: #FFFFFF;
-   font-size: 1.2em;
-   font-family: 'segoe';
-
-   
-   
-}
-main > button{
-    border-radius: 20px;
-    border: none;
-    background-color:  #eadaf7;
-    margin: 20px;
-    font-family: 'segoe';
-    font-size: 1em;
-}
 button > img{
     vertical-align: middle;
 }
@@ -136,7 +89,7 @@ button > p{
    
 }
 .user{
-    background-color:#ffffff;
+    background-color:#b61d1d;
     height: 100vh;
     float: right;
     width: 27vw; 

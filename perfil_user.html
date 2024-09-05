@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/perfil.css">
+    <link rel="stylesheet" href="estilo/raiz.css">
+    <title>Editar perfil usuário</title>
+   
+</head>
+<body>
+    <header>
+        <div class="logo">
+        <img src="imagens/logoescrita1.svg" alt="">
+        </div>
+       
+       <ul>
+        <li><img src="icons/perfil/layout.svg" alt=""><a href="">Visão Geral</a> </li>
+        <hr>
+        <li> <img src="icons/perfil/add.svg" alt=""><a href="">Cadastrar curiosidade</a></li>
+        <hr>
+        <li><img src="icons/perfil/conta.svg" alt=""><a href="">Meus cadastros</a></li>
+        <li><img src="icons/perfil/grafico.svg" alt=""><a href=""> Relatórios</a></li>
+        <hr>
+        <li><img src="icons/perfil/configura.svg" alt=""><a href="">Configurações</a></li>
+       </ul>
+       <div class="rodape_menu"></div>
+    </header>
+    <main>
+        <input type="search" name="pesquisa" placeholder="Faça sua pesquisa aqui">
+        <div class="personalizacao">
+            <button><img src="icons/perfil/contrast_24dp_6B1BC6_FILL0_wght400_GRAD0_opsz24.svg" alt=""></button>
+            <button><img src="icons/perfil/notifications_24dp_6B1BC6_FILL0_wght400_GRAD0_opsz24.svg" alt=""></button>
+        </div><br>
+        <button><img src="icons/perfil/account_circle_24dp_6B1BC6_FILL0_wght400_GRAD0_opsz24.svg" alt=""><p>Meu perfil</p></button>
+        <button><img src="icons/perfil/ios_share_24dp_6B1BC6_FILL0_wght400_GRAD0_opsz24.svg" alt=""><p>Opções de compartilhamento</p></button>
+      
+
+        <!--Formulário-->
+        <form action="dados_de_usuario" method="post">
+        <h1>Seus dados</h1>
+        <label for="nome"><p>Nome</p></label>
+        <input type="text" name="nome" id="nome">
+        <label for="idade"><p>Idade</p></label>
+        <input type="number" name="idade" id="idade">
+        <label for="email"><p>Email</p></label>
+        <input type="email" name="email" id="email">
+        <label for="user"><p>Nome de usuário</p></label>
+        <input type="text" name="user" id="user">
+        <label for="nascimento"><p>Data de nascimento</p></label>
+        <input type="date" name="nascimento" id="nascimento"> <br><br>
+
+        <label for="est_civil">Estado civil</label> <br><br>
+        <select name="est_civil" id="est_civil">
+            <option value="casado">Casado(a)</option>
+            <option value="solteiro">Solteiro(a)</option>
+            <option value="união estável">União estável</option>
+            <option value="divorciado">Divorciado(a)</option>
+            <option value="viuvo">Viúvo(a)</option>
+        </select>
+
+        <label for="endereco"><p>Endereço</p></label>
+        <input type="text" name="endereco" id="endereco">
+
+        <label for="ocupacao"><p>Ocupação</p></label>
+        <input type="text" name="ocupacao" id="ocupacao">
+<br>
+        <div class="acoes">
+        
+        <button type="submit" value="Salvar">Salvar</button>
+        <button type="reset" value="Limpar">Limpar</button>
+        </div>
+
+        </form>
+    </main>
+    <div class="user">
+    <div class="conta">
+    <img src="imagens/users/pexels-khoa-vo-2347168-10487185.jpg" alt="mulher oriental de cabelos pretos lisos e curtos"> 
+    <h3>Nome de usuário</h3>
+    <button><img src="icons/perfil/expand_circle_down_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt=""></button>
+    <p>[Operário]</p>
+    </div>
+
+    
+    <div class="edicao">
+    <h2>Sua conta</h2>
+    <div class="moldura"><img src="icons/perfil/conta.svg" alt="simbolo de usuario"></div>
+   
+    <div class="borda"><img src="icons/perfil/sync_24dp_6B1BC6_FILL0_wght400_GRAD0_opsz24.svg" alt=""> <button><p>Atualize sua imagem</p></button></div>
+    <div class="borda"><img src="icons/perfil/delete_24dp_6B1BC6_FILL0_wght400_GRAD0_opsz24.svg" alt=""> <button><p>Remover imagem</p></button></div><br>
+    
+    
+    <h2>Altere sua senha</h2>
+        <form action="altera_senha.php" method="post" class="dados">
+            <label for="senha_atual"> Senha atual</label><br>
+            <input type="password" name="senha_atual" id="senha_atual" placeholder="********"><br>
+            <label for="senha_nova">Nova senha</label>
+            <input type="password" name="senha_nova" id="senha_nova"  placeholder="********">
+            <br>
+            <div class="permadm">
+            <input type="checkbox" id="check" name="check"><label for="adm"> Administrador</label><br>
+        </div>
+            
+             <br>
+            <div class="acoes">
+            <button type="submit" value="Salvar" id="save"> <img src="icons/perfil/save_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt=""> Salvar</button>
+            </div>
+        </form>
+        </div>
+        
+   
+    <footer></footer>
+</body>
+</html>

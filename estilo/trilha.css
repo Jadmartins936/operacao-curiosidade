@@ -12,16 +12,81 @@ header{
     float: left;
 }
 
-#filtros{
+.filtros{
+margin: 10px;
+padding:30px;
+width: 70vw;
+height: 8vh;
+background-color:#f9fafa;
+border: 1px solid #d9d9d9;
+border-radius: 10px;
+position: relative;
+}
+.botoes > button{
+    margin:  30px 10px 10px 10px;
+    width: 70%;
+    padding: 2%;
+    height: 3.5vh;
+    border-radius: 10px;
+    border: 1px solid #6b1bc6;
+    font-family: 'segoe';
+    font-size: 1.15em;
+    color:#6b1bc6;
+    font-weight:lighter;
+    background-color: #FFFFFF;
  
-        padding: 18px;
-        border-radius: 18px;
-        font-family: 'segoe';
-        background-color:#e4c6ff;
-        float: left;
-        
-    }
-
+}
+label{
+    font-size: 1.2em;
+    color: #212121;
+    margin: 10px;
+}
+.botoes{
+   
+    width: 22%;
+    float: left;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    height: 7.2vh;
+}
+.agrupa{
+    
+    width: 16%;
+    float: left;
+    margin: 20px;
+}
+select{
+    display: flex;
+    background-color: #FFFFFF;
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 2%;
+    width: 100%;
+    font-family: 'segoe';
+    font-size: 1.1em;
+}
+table{
+    
+    border-collapse: collapse;
+    margin: 12px;
+    width: 72.5vw;
+    text-align: center;
+}
+thead, tr{
+    
+    border:1px solid #d9d9d9;
+    background-color: #f9fafa;
+    height: 5vh;
+}
+.user{
+    background-color: transparent;
+    height: 14vh;
+    width: 27vw; 
+    color: #6b1bc6;
+    font-size: 1em;
+}
 .logo{
     background-color: #6b1bc6;
     border-radius: 10px 10px 0px 0px;
@@ -59,17 +124,7 @@ a:hover{
     padding: 10px;
     
 }
-main{
-    
-    position: absolute;
-    margin-left: 24%;
-    padding: 30px;
-    width: 50%;
-    color: #6b1bc6;
-    font-weight: bold;
-    font-family: 'segoe';
-    
-}
+
 
 button > img{
     vertical-align: middle;
@@ -88,16 +143,7 @@ button > p{
     bottom: 0px;    
    
 }
-.user{
-    background-color:#b61d1d;
-    height: 100vh;
-    float: right;
-    width: 27vw; 
-    color: #6b1bc6;
-    
-    font-size: 1em;
-    
-}
+
 .conta{
     margin: 30px;
     background-color: #6b1bc6;

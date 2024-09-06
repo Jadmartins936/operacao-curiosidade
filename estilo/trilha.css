@@ -70,15 +70,20 @@ select{
 table{
     
     border-collapse: collapse;
-    margin: 12px;
+   
     width: 72.5vw;
     text-align: center;
-}
-thead, tr{
     
+}
+
+thead{
+    border-radius: 8px;
     border:1px solid #d9d9d9;
     background-color: #f9fafa;
     height: 5vh;
+    width: 72.5vw;
+   
+    position: relative;
 }
 .user{
     background-color: transparent;
